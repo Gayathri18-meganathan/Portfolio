@@ -1,56 +1,128 @@
-body {
-    background-color: rgb(30, 160, 204);
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
-    padding: 0;}
-
-nav {
-    background-color: #333;
-    color: white;
-    padding: 10px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Header Section */
-header {
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     background-color: #f4f4f4;
-    padding: 50px 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2.5em;
-    margin: 0;
+    margin-bottom: 0.5rem;
 }
 
-/* About, Projects, and Contact Sections */
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #444;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
 section {
-    padding: 40px 20px;
-    text-align: center;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.project {
-    margin: 20px 0;
+.about, .projects, .contact {
+    margin-bottom: 2rem;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
     text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+/* Contact Section */
+.contact {
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.3s;
+    color: #fff;
+}
+
+.contact-link img {
+    margin-right: 0.5rem;
+}
+
+.contact-link.email {
+    background: #f44336;
+}
+
+.contact-link.linkedin {
+    background: #0077b5;
+}
+
+.contact-link.resume {
+    background: #4caf50;
+}
+
+.contact-link:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
 }

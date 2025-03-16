@@ -13,11 +13,11 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
 }
 
 nav ul li {
     margin: 0 15px;
+    align-items: end;
 }
 
 nav ul li a {
@@ -42,7 +42,26 @@ section {
     padding: 40px 20px;
     text-align: center;
 }
-
+section a:link{
+    color:green;
+    background-color: transparent;
+}
+section a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+section a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  section a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
 .project {
     margin: 20px 0;
 }
